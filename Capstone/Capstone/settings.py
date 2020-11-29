@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'Capstone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'save_monitors.db',
+        'NAME': BASE_DIR / 'specs.db',
     }
 }
 

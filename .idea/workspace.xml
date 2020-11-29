@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="" />
+    <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/Capstone/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/Capstone/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/curved.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync_premium.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync_premium_pro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync_compat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync_ultimate.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/monitors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/psus.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/storages.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +51,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1k6hZfx7nUzf5ckjbIK4UP6KPPN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,6 +64,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Capstone/main_app/static" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -49,10 +73,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Csv.Editor.Settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Capstone/main_app" />
+      <recent name="$PROJECT_DIR$/Capstone/main_app/static/df_csvs" />
       <recent name="$PROJECT_DIR$/Capstone/main_app/templates" />
       <recent name="$PROJECT_DIR$/Capstone/main_app/static/images" />
     </key>
@@ -84,7 +110,9 @@
       <workItem from="1606521872585" duration="300000" />
       <workItem from="1606522660794" duration="4058000" />
       <workItem from="1606582617983" duration="629000" />
-      <workItem from="1606620979076" duration="281000" />
+      <workItem from="1606620979076" duration="680000" />
+      <workItem from="1606666488706" duration="2312000" />
+      <workItem from="1606676261316" duration="11902000" />
     </task>
     <servers />
   </component>
@@ -92,17 +120,52 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605066442224">
+    <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606677058367">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
+    <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606677058367" />
     <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605066442224" />
-    <state x="1214" y="430" key="SettingsEditor" timestamp="1605032643800">
+    <state width="2080" height="442" key="GridCell.Tab.0.bottom" timestamp="1606689911217">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
+    <state width="2080" height="442" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911217" />
+    <state width="2080" height="442" key="GridCell.Tab.0.center" timestamp="1606689911216">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.0.center/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911216" />
+    <state width="2080" height="442" key="GridCell.Tab.0.left" timestamp="1606689911214">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.0.left/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911214" />
+    <state width="2080" height="442" key="GridCell.Tab.0.right" timestamp="1606689911217">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.0.right/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911217" />
+    <state width="2080" height="442" key="GridCell.Tab.1.bottom" timestamp="1606689911219">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.1.bottom/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911219" />
+    <state width="2080" height="442" key="GridCell.Tab.1.center" timestamp="1606689911218">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.1.center/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911218" />
+    <state width="2080" height="442" key="GridCell.Tab.1.left" timestamp="1606689911218">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.1.left/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911218" />
+    <state width="2080" height="442" key="GridCell.Tab.1.right" timestamp="1606689911219">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state width="2080" height="442" key="GridCell.Tab.1.right/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606689911219" />
+    <state x="1214" y="430" key="SettingsEditor" timestamp="1606676372089">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="1214" y="430" key="SettingsEditor/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676372089" />
     <state x="1214" y="430" key="SettingsEditor/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605032643800" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606522661373">
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606676262387">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676262387" />
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606522661373" />
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605060710353" />
     <state x="945" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1605153895356">
