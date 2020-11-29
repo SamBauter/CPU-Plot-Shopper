@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k6hZfx7nUzf5ckjbIK4UP6KPPN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Capstone/main_app/static" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Capstone/main_app/templates" />
+      <recent name="$PROJECT_DIR$/Capstone/main_app/static/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Capstone/main_app/static" />
+      <recent name="$PROJECT_DIR$/Capstone" />
+      <recent name="$PROJECT_DIR$/Capstone/main_app/templates" />
+      <recent name="$PROJECT_DIR$/Capstone/main_app/static/css" />
+      <recent name="$PROJECT_DIR$/Capstone/main_app/static/assets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="" />
+      <created>1605027005636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605027005636</updated>
+      <workItem from="1605027009378" duration="7113000" />
+      <workItem from="1605050283762" duration="599000" />
+      <workItem from="1605060366649" duration="6193000" />
+      <workItem from="1605127120992" duration="11550000" />
+      <workItem from="1605201872407" duration="7328000" />
+      <workItem from="1606242124196" duration="591000" />
+      <workItem from="1606420032358" duration="8618000" />
+      <workItem from="1606521872585" duration="300000" />
+      <workItem from="1606522660794" duration="4058000" />
+      <workItem from="1606582617983" duration="629000" />
+      <workItem from="1606620979076" duration="281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605066442224">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="976" y="565" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605066442224" />
+    <state x="1214" y="430" key="SettingsEditor" timestamp="1605032643800">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="1214" y="430" key="SettingsEditor/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605032643800" />
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606522661373">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606522661373" />
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605060710353" />
+    <state x="945" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1605153895356">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="945" y="332" width="670" height="676" key="search.everywhere.popup/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1605153895356" />
+  </component>
+</project>

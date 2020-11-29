@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="db" uuid="72d733d5-b310-4f98-9702-178eed64d00e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Capstone/db.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="save_monitors" uuid="d0e2645e-847c-4cc1-8701-5620c2916994">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Capstone/save_monitors.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
