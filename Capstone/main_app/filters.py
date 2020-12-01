@@ -1,7 +1,7 @@
 import django_filters
 from django import forms
 from django_filters import MultipleChoiceFilter, RangeFilter
-from .models import MonitorSpecs
+from .models import MonitorSpecs, CPUSpecs
 
 
 def get_choices(model, field):
@@ -29,3 +29,19 @@ class MonitorFilter(django_filters.FilterSet):
     class Meta:
         model = MonitorSpecs
         fields = ['brand', 'size']
+
+
+class CPUFilter(django_filters.FilterSet):
+    brand = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'brand'), widget=forms.CheckboxSelectMultiple)
+    model = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'model'), widget=forms.CheckboxSelectMultiple)
+    core_count = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'core_count'),
+                                      widget=forms.CheckboxSelectMultiple)
+    boost_clock = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'boost_clock'),
+                                       widget=forms.CheckboxSelectMultiple)
+    tdp = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'tdp'), widget=forms.CheckboxSelectMultiple)
+    integrated_graphics = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'integrated_graphics'),
+                                               widget=forms.CheckboxSelectMultiple)
+    smt = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'smt'),
+                               widget=forms.CheckboxSelectMultiple)
+    core_clock = MultipleChoiceFilter(choices=get_choices(CPUSpecs, 'core_clock'), widget=forms.CheckboxSelectMultiple)
+

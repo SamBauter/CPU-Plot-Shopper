@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/Capstone/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/Capstone/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/curved.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync_premium.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/free_sync_premium_pro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync_compat.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/g_sync_ultimate.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/monitors.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/psus.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/df_csvs/storages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +100,7 @@
       <workItem from="1606620979076" duration="680000" />
       <workItem from="1606666488706" duration="2312000" />
       <workItem from="1606676261316" duration="11902000" />
+      <workItem from="1606781435140" duration="6070000" />
     </task>
     <servers />
   </component>
@@ -162,12 +150,16 @@
     </state>
     <state x="1214" y="430" key="SettingsEditor/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676372089" />
     <state x="1214" y="430" key="SettingsEditor/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605032643800" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606676262387">
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606781435343">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676262387" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606522661373" />
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606781435343" />
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605060710353" />
+    <state x="1534" y="455" width="782" height="825" key="find.popup" timestamp="1606787317321">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="1534" y="455" width="782" height="825" key="find.popup/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606787317321" />
     <state x="945" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1605153895356">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
