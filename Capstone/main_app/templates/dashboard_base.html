@@ -1,5 +1,4 @@
 {%  load static %}
-{% load render_table from django_tables2 %}
 
 
 <!doctype html>
@@ -22,7 +21,7 @@
 
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Monitor Analysis</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">{% block title %}Base Analysis{% endblock %}</a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -83,12 +82,11 @@
             <ul class="nav flex-column mb-2">
 
             <form method="get">
-                {{ filter.form.as_p }}
+                {% block filter_obj %}
+                {% endblock %}
+
                 <input type="submit" />
             </form>
-            {% for obj in filter.qs %}
-                {{ obj.brand}} {{obj.price }}<br />
-            {% endfor %}
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
@@ -127,11 +125,13 @@
           </div>
 
           <div class="my-9" id="myChart" width="900" height="380">
-              {{ graph_html|safe }}
+              {% block graph_obj  %}
+              {% endblock %}
           </div>
 
           <h2>Section title</h2>
-            {% render_table table %}
+        {% block table_obj  %}
+        {% endblock %}
 
 
         </main>

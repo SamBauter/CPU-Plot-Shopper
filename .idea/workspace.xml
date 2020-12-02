@@ -4,8 +4,14 @@
     <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/static/css/album.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +106,9 @@
       <workItem from="1606620979076" duration="680000" />
       <workItem from="1606666488706" duration="2312000" />
       <workItem from="1606676261316" duration="11902000" />
-      <workItem from="1606781435140" duration="6070000" />
+      <workItem from="1606781435140" duration="6446000" />
+      <workItem from="1606848680000" duration="7537000" />
+      <workItem from="1606866622949" duration="4943000" />
     </task>
     <servers />
   </component>
@@ -150,16 +158,16 @@
     </state>
     <state x="1214" y="430" key="SettingsEditor/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676372089" />
     <state x="1214" y="430" key="SettingsEditor/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605032643800" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606781435343">
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606866639939">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676262387" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606781435343" />
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606866639939" />
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605060710353" />
-    <state x="1534" y="455" width="782" height="825" key="find.popup" timestamp="1606787317321">
+    <state x="1534" y="455" width="782" height="825" key="find.popup" timestamp="1606854081522">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
-    <state x="1534" y="455" width="782" height="825" key="find.popup/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606787317321" />
+    <state x="1534" y="455" width="782" height="825" key="find.popup/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606854081522" />
     <state x="945" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1605153895356">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>

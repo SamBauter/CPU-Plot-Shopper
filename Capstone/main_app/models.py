@@ -30,6 +30,7 @@ def populate_MonSpec_from_csv(path='main_app/static/df_csvs/cleaned_monitors.csv
 
                 )
 
+
 def populate_CPUSpec_from_csv(path='main_app/static/df_csvs/cpus.csv'):
     with open(path) as f:
         reader = csv.reader(f)
@@ -46,6 +47,7 @@ def populate_CPUSpec_from_csv(path='main_app/static/df_csvs/cpus.csv'):
                     smt=None if row[7] == "" else row[7],
                     price=None if row[8] == "" else float(row[8]),
                 )
+
 
 def populate_MBSpec_from_csv(path='main_app/static/df_csvs/motherboards.csv'):
     with open(path) as f:
@@ -80,6 +82,7 @@ def populate_PSUSpec_from_csv(path='main_app/static/df_csvs/psus.csv'):
                     price=None if row[7] == "" else float(row[7]),
                 )
 
+
 def populate_RAMSpec_from_csv(path='main_app/static/df_csvs/rams.csv'):
     with open(path) as f:
         reader = csv.reader(f)
@@ -97,6 +100,7 @@ def populate_RAMSpec_from_csv(path='main_app/static/df_csvs/rams.csv'):
                     price=None if row[8] == "" else float(row[8]),
                 )
 
+
 def populate_StorSpec_from_csv(path='main_app/static/df_csvs/storages.csv'):
     with open(path) as f:
         reader = csv.reader(f)
@@ -113,6 +117,7 @@ def populate_StorSpec_from_csv(path='main_app/static/df_csvs/storages.csv'):
                     interface=None if row[7] == "" else row[7],
                     price=None if row[8] == "" else float(row[8]),
                 )
+
 
 def populate_GPUSpec_from_csv(path='main_app/static/df_csvs/gpus.csv'):
     with open(path) as f:
@@ -137,7 +142,7 @@ class CPUSpecs(models.Model):
     brand = models.TextField(blank=True, null=True)
     model = models.TextField(blank=True, null=True)
     core_count = models.IntegerField(blank=True, null=True)
-    core_clock =  models.DecimalField(max_digits=6, decimal_places=2, null=True)
+    core_clock = models.DecimalField(max_digits=6, decimal_places=2, null=True)
     boost_clock = models.DecimalField(max_digits=6, decimal_places=2, null=True)
     tdp = models.IntegerField(blank=True, null=True)
     integrated_graphics = models.TextField(blank=True, null=True)
@@ -251,3 +256,12 @@ class StorSpecs(models.Model):
 
     def __str__(self):
         return self.brand + " " + self.model + " " + self.capacity + " " + self.drive_type + " " + self.interface
+
+
+db_counts = {'monitor_count': MonitorSpecs.objects.all().count(),
+             'cpu_count': CPUSpecs.objects.all().count(),
+             'gpu_count': GPUSpecs.objects.all().count(),
+             'mb_count': MBSpecs.objects.all().count(),
+             'psu_count': PSUSpecs.objects.all().count(),
+             'ram_count': RAMSpecs.objects.all().count(),
+             'stor_count': StorSpecs.objects.all().count()}

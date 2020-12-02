@@ -28,8 +28,9 @@
 }
 
 .card-img-holder{
-  height: 200px;
+  height:250px !important;
 }
+
 
 .card-title{
   text-align: center;

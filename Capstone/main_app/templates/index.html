@@ -82,7 +82,7 @@
                       <a href="dashboard_test" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.monitor_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -96,10 +96,10 @@
                   <h4 class="card-title">CPU</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="cpu_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.cpu_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -113,10 +113,10 @@
                   <h4 class="card-title">GPU</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="gpu_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.gpu_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -131,10 +131,10 @@
                   <h4 class="card-title">Motherboard</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="motherboard_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.mb_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -148,10 +148,10 @@
                   <h4 class="card-title">PSU</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="psu_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.psu_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -165,10 +165,10 @@
                   <h4 class="card-title">RAM</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="ram_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.ram_count}} items </small>
                   </div>
                 </div>
               </div>
@@ -183,48 +183,16 @@
                   <h4 class="card-title">SSD</h4>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
+                      <a href="stor_graph" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
                     </div>
-                    <small class="text-muted">500 items </small>
+                    <small class="text-muted">{{db_counts.stor_count}} items </small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <div class="card-img-holder">
-                  <img class="card-img-top" src="{% static 'images/monitor-image.png' %}" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Monitors</h4>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
-                    </div>
-                    <small class="text-muted">500 items </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <div class="card-img-holder">
-                  <img class="card-img-top" src="{% static 'images/monitor-image.png' %}" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Monitors</h4>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="dashboard" role="button" class="btn btn-sm btn-outline-secondary">Browse</a>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add new model</button>
-                    </div>
-                    <small class="text-muted">500 items </small>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </div>

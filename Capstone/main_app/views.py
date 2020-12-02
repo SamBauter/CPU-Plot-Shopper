@@ -1,13 +1,17 @@
 from django.shortcuts import render
 from django_tables2 import RequestConfig
-from .models import MonitorSpecs
-from .filters import MonitorFilter
-from .tables import MonitorTable
-from .graphs import MonitorGraph
+from .models import MonitorSpecs, CPUSpecs, GPUSpecs, MBSpecs, PSUSpecs, RAMSpecs, StorSpecs
+from .models import db_counts
+from .filters import MonitorFilter, CPUFilter, GPUFilter, MBFilter, PSUFilter, RAMFilter, StorFilter
+from .tables import MonitorTable, CPUTable, GPUTable, MBTable, PSUTable, RAMTable, StorTable
+from .graphs import CategoryGraph
 
 
 def index(request):
-    return render(request, 'index.html')
+
+    return render(request, 'index.html', {
+        'db_counts': db_counts
+    })
 
 
 def dashboard(request):
@@ -18,25 +22,108 @@ def dashboard_test(request):
     f = MonitorFilter(request.GET, queryset=MonitorSpecs.objects.filter(price__isnull=False))
 
     table = MonitorTable(f.qs)
-    graph = MonitorGraph(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='size', title='Monitors by Size and Price', x_label='Price ($)',
+                          y_label='Size (inches)')
     graph_html = graph.get_html_graph()
     RequestConfig(request).configure(table)
     table.paginate(page=request.GET.get("page", 1), per_page=25)
 
     return render(request, 'dashboard_test.html', {
+        'title': 'Monitors',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
 
-#def monitor_graph(request):
 
-#def cpu_graph(request):
+def cpu_graph(request):
+    f = CPUFilter(request.GET, queryset=CPUSpecs.objects.filter(price__isnull=False))
+    table = CPUTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='core_clock', title='CPUS by Core Clock and Price', x_label='Price ($)',
+                          y_label='Core Clock (GHz)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'CPUs',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
 
-#def gpu_graph(request):
+def gpu_graph(request):
+    f= GPUFilter(request.GET, queryset=GPUSpecs.objects.filter(price__isnull=False))
+    table = GPUTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='memory', title='GPUs by Memory and Price', x_label='Price ($)',
+                          y_label='Memory (GB)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'GPUs',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
 
-#def motherboard_graph(request):
 
-#def ram_graph(request):
+def motherboard_graph(request):
+    f = MBFilter(request.GET, queryset=MBSpecs.objects.filter(price__isnull=False))
+    table = MBTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='mem_max', title='Motherboards by Memory Max and Price', x_label='Price ($)',
+                          y_label='Memory Maximum (GB)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'MotherBoards',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
 
-#def stor_graph(request):
+def psu_graph(request):
+    f = PSUFilter(request.GET, queryset=PSUSpecs.objects.filter(price__isnull=False))
 
+    table = PSUTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='wattage', title='PSUs by Wattage and Price',
+                          x_label='Price ($)',
+                          y_label='Watts (W)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'PSUs',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
+
+def ram_graph(request):
+    qs = RAMSpecs.objects.filter(price_per_gb__isnull=False)
+    f = RAMFilter(request.GET, queryset=qs.filter(price__isnull=False))
+
+    table = RAMTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='price_per_gb', title='RAM by Price Per GB and Price',
+                          x_label='Price ($)',
+                          y_label='Price Per GB ($)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'RAM',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
+
+def stor_graph(request):
+    qs = StorSpecs.objects.filter(price_per_gb__isnull=False)
+    f = StorFilter(request.GET, queryset=qs.filter(price__isnull=False))
+
+    table = StorTable(f.qs)
+    graph = CategoryGraph(f.qs, x='price', y='price_per_gb', title='Storage by Price Per GB and Price',
+                          x_label='Price ($)',
+                          y_label='Price Per GB ($)')
+    graph_html = graph.get_html_graph()
+    RequestConfig(request).configure(table)
+    table.paginate(page=request.GET.get("page", 1), per_page=25)
+    return render(request, 'dashboard_test.html', {
+        'title': 'Storage',
+        'table': table,
+        'filter': f,
+        'graph_html': graph_html})
