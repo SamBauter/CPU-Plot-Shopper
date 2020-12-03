@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/graphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/static/css/album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -108,7 +101,7 @@
       <workItem from="1606676261316" duration="11902000" />
       <workItem from="1606781435140" duration="6446000" />
       <workItem from="1606848680000" duration="7537000" />
-      <workItem from="1606866622949" duration="4943000" />
+      <workItem from="1606866622949" duration="10349000" />
     </task>
     <servers />
   </component>

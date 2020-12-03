@@ -2,5 +2,18 @@
 {% load render_table from django_tables2 %}
 {% block title %} {{title}} {% endblock %}
 {% block table_obj %} {% render_table table %} {% endblock %}
-{% block filter_obj %} {{ filter.form.as_p }} {% endblock %}
+{% block filter_obj %}
+    {% for field in filter.form %}
+    <li class="nav-item">
+                    <a class="btn btn-outline-info" data-toggle="collapse" href="#{{field.name}}-filter-options">
+                    <span data-feather="file-text"></span>
+                    {{field.label}}
+                    </a>
+                    <div class="collapse" id="{{field.name}}-filter-options">
+            <p>{{field}}<p>
+    {%  endfor %}
+</div>
+    <br>
+
+{% endblock %}
 {% block graph_obj %} {{ graph_html|safe }} {% endblock %}

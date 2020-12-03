@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 from matplotlib.colors import ListedColormap
 import mpld3
 from mpld3 import plugins
@@ -47,7 +47,8 @@ class BaseGraph:
         return label_list_html
 
     def get_html_graph(self, x, y, title, x_label, y_label):
-        fig, ax = plt.subplots(figsize=[20, 10])
+        fig = Figure(figsize=[20, 10])
+        ax = fig.subplots()
         ax.grid(True, alpha=0.3)
         points = ax.plot(self.df[x], self.df[y], 'bo',
                          markeredgecolor='k', markersize=3, markeredgewidth=1, alpha=.4)
