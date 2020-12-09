@@ -1,0 +1,15 @@
+{% extends 'list_all_base.html' %}
+{% block filter_obj %}
+    {% for field in filter.form %}
+    <li class="nav-item mb-2 ml-2">
+                    <a class="btn btn-outline-info" data-toggle="collapse" href="#{{field.name}}-filter-options">
+                    <span data-feather="file-text"></span>
+                    {{field.label}}
+                    </a>
+                    <div class="collapse" id="{{field.name}}-filter-options">
+            <p>{{field}}<p>
+    {%  endfor %}
+</div>
+    <br>
+
+{% endblock %}

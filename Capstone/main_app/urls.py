@@ -13,5 +13,6 @@ urlpatterns = [
     path('ram_graph/', views.ram_graph),
     path('stor_graph', views.stor_graph),
     path('login_register/', views.login_register),
-    path('logout/', views.logout)
+    path('logout/', views.logout),
+    path('<category>/list_all_items', views.list_all)
 ]
