@@ -1,14 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django_tables2 import RequestConfig
 from .models import MonitorSpecs, CPUSpecs, GPUSpecs, MBSpecs, PSUSpecs, RAMSpecs, StorSpecs
 from .models import db_counts
 from .filters import MonitorFilter, CPUFilter, GPUFilter, MBFilter, PSUFilter, RAMFilter, StorFilter
 from .tables import MonitorTable, CPUTable, GPUTable, MBTable, PSUTable, RAMTable, StorTable
 from .graphs import CategoryGraph
+from django.contrib.auth.models import User, auth
+from django.contrib import messages
 
 
 def index(request):
-
     return render(request, 'index.html', {
         'db_counts': db_counts
     })
@@ -18,7 +19,7 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 
-def dashboard_test(request):
+def monitor_graph(request):
     f = MonitorFilter(request.GET, queryset=MonitorSpecs.objects.filter(price__isnull=False))
 
     table = MonitorTable(f.qs)
@@ -49,8 +50,9 @@ def cpu_graph(request):
         'filter': f,
         'graph_html': graph_html})
 
+
 def gpu_graph(request):
-    f= GPUFilter(request.GET, queryset=GPUSpecs.objects.filter(price__isnull=False))
+    f = GPUFilter(request.GET, queryset=GPUSpecs.objects.filter(price__isnull=False))
     table = GPUTable(f.qs)
     graph = CategoryGraph(f.qs, x='price', y='memory', title='GPUs by Memory and Price', x_label='Price ($)',
                           y_label='Memory (GB)')
@@ -67,7 +69,8 @@ def gpu_graph(request):
 def motherboard_graph(request):
     f = MBFilter(request.GET, queryset=MBSpecs.objects.filter(price__isnull=False))
     table = MBTable(f.qs)
-    graph = CategoryGraph(f.qs, x='price', y='mem_max', title='Motherboards by Memory Max and Price', x_label='Price ($)',
+    graph = CategoryGraph(f.qs, x='price', y='mem_max', title='Motherboards by Memory Max and Price',
+                          x_label='Price ($)',
                           y_label='Memory Maximum (GB)')
     graph_html = graph.get_html_graph()
     RequestConfig(request).configure(table)
@@ -77,6 +80,7 @@ def motherboard_graph(request):
         'table': table,
         'filter': f,
         'graph_html': graph_html})
+
 
 def psu_graph(request):
     f = PSUFilter(request.GET, queryset=PSUSpecs.objects.filter(price__isnull=False))
@@ -93,6 +97,7 @@ def psu_graph(request):
         'table': table,
         'filter': f,
         'graph_html': graph_html})
+
 
 def ram_graph(request):
     qs = RAMSpecs.objects.filter(price_per_gb__isnull=False)
@@ -111,6 +116,7 @@ def ram_graph(request):
         'filter': f,
         'graph_html': graph_html})
 
+
 def stor_graph(request):
     qs = StorSpecs.objects.filter(price_per_gb__isnull=False)
     f = StorFilter(request.GET, queryset=qs.filter(price__isnull=False))
@@ -127,3 +133,42 @@ def stor_graph(request):
         'table': table,
         'filter': f,
         'graph_html': graph_html})
+
+
+def login_register(request):
+    if request.method == 'POST':
+        email = request.POST.get('username_email')
+        password = request.POST.get('password')
+        if not email or not password:
+            messages.info(request, 'Please fill out all fields')
+            return redirect('/')
+        elif 'login_btn' in request.POST:
+            print('Login HIT')
+            user = auth.authenticate(username=email, password=password)
+            if user is not None:
+                auth.login(request, user)
+                return redirect('/')
+            else:
+                messages.error(request, 'Invalid Email or Password')
+                return redirect('/')
+
+        elif 'sign_up_btn' in request.POST:
+            if User.objects.filter(username=email).exists():
+                messages.error(request, 'User already exists')
+                return redirect('/')
+            else:
+                user = User.objects.create_user(username=email, email=email, password=password)
+                user.save()
+                messages.success(request, 'Sign Up Successful')
+                return redirect('/')
+        else:
+            return redirect('/')
+    else:
+        messages.info(request,'Enter Login Information')
+        return redirect('/')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+
+

@@ -24,9 +24,15 @@
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">{% block title %}Base Analysis{% endblock %}</a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
+          {% if user.is_authenticated %}
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+          <a class="nav-link" href="/logout">Log out</a>
         </li>
+              {%  else %}
+              <li class="nav-item text-nowrap">
+          <a class="nav-link" href="/login_register">Log in</a>
+        </li>
+          {% endif %}
       </ul>
     </nav>
 

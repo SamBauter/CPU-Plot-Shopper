@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/graphs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,11 @@
       <workItem from="1606676261316" duration="11902000" />
       <workItem from="1606781435140" duration="6446000" />
       <workItem from="1606848680000" duration="7537000" />
-      <workItem from="1606866622949" duration="10349000" />
+      <workItem from="1606866622949" duration="10556000" />
+      <workItem from="1607025462088" duration="724000" />
+      <workItem from="1607100708745" duration="878000" />
+      <workItem from="1607375950143" duration="4342000" />
+      <workItem from="1607470100979" duration="12411000" />
     </task>
     <servers />
   </component>
@@ -151,11 +157,11 @@
     </state>
     <state x="1214" y="430" key="SettingsEditor/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676372089" />
     <state x="1214" y="430" key="SettingsEditor/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605032643800" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1606866639939">
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1607470096747">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/-2520.59.1440.877/0.23.2560.1353@0.23.2560.1353" timestamp="1606676262387" />
-    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1606866639939" />
+    <state x="881" y="623" key="com.intellij.ide.util.TipDialog/-1080.23.1080.1897/0.23.2560.1353@0.23.2560.1353" timestamp="1607470096747" />
     <state x="881" y="623" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/-1080.23.1080.1897@0.23.2560.1353" timestamp="1605060710353" />
     <state x="1534" y="455" width="782" height="825" key="find.popup" timestamp="1606854081522">
       <screen x="0" y="23" width="2560" height="1353" />
