@@ -91,6 +91,13 @@
           </div>
 
           <div class="my-9" id="myChart" width="900" height="380">
+          {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div class = "alert alert-danger" role="alert">
+                    {{ message }}
+                </div>
+            {% endif %}
+            {% endfor %}
               {% block graph_obj  %}
               {% endblock %}
           </div>

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39d64409-c5bb-4a81-ab74-9aaa191a179d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/static/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/static/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/dashboard_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstone/main_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone/main_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,7 @@
       <workItem from="1607025462088" duration="724000" />
       <workItem from="1607100708745" duration="878000" />
       <workItem from="1607375950143" duration="4342000" />
-      <workItem from="1607470100979" duration="15133000" />
+      <workItem from="1607470100979" duration="17825000" />
     </task>
     <servers />
   </component>
