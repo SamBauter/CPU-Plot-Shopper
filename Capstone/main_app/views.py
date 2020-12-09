@@ -31,6 +31,7 @@ def monitor_graph(request):
 
     return render(request, 'dashboard_test.html', {
         'title': 'Monitors',
+        'table_title': 'Monitors',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -46,6 +47,7 @@ def cpu_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'CPUs',
+        'table_title': 'CPUs',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -61,6 +63,7 @@ def gpu_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'GPUs',
+        'table_title': 'GPUs',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -77,6 +80,7 @@ def motherboard_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'MotherBoards',
+        'table_title': 'MotherBoards',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -94,6 +98,7 @@ def psu_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'PSUs',
+        'table_title': 'PSUs',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -112,6 +117,7 @@ def ram_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'RAM',
+        'table_title': 'RAMs',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
@@ -130,6 +136,7 @@ def stor_graph(request):
     table.paginate(page=request.GET.get("page", 1), per_page=25)
     return render(request, 'dashboard_test.html', {
         'title': 'Storage',
+        'table_title': 'Storage',
         'table': table,
         'filter': f,
         'graph_html': graph_html})
