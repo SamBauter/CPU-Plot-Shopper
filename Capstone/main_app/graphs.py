@@ -47,14 +47,14 @@ class BaseGraph:
         return label_list_html
 
     def get_html_graph(self, x, y, title, x_label, y_label):
-        fig = Figure(figsize=[20, 10])
+        fig = Figure(figsize=[15, 10])
         ax = fig.subplots()
         ax.grid(True, alpha=0.3)
         points = ax.plot(self.df[x], self.df[y], 'bo',
-                         markeredgecolor='k', markersize=3, markeredgewidth=1, alpha=.4)
-        ax.set_xlabel(x_label)
-        ax.set_ylabel(y_label)
-        ax.set_title(title)
+                         markeredgecolor='k', markersize=7, markeredgewidth=1, alpha=.4)
+        ax.set_xlabel(x_label, size = 15)
+        ax.set_ylabel(y_label, size = 15)
+        ax.set_title(title, size = 30)
         labels = self.get_labels()
         tooltip = plugins.PointHTMLTooltip(points[0], labels, voffset=10, hoffset=10, css=self.css)
         plugins.connect(fig, tooltip)
