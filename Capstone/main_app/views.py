@@ -204,35 +204,36 @@ def logout(request):
     auth.logout(request)
     return redirect('/')
 
-def list_all(request,**kwargs):
-    #url_split_list = request.path.split('/')
+
+def list_all(request, **kwargs):
     category = kwargs['category']
-    print('CATEGORY' +category)
+    back_url = '/'+category
+    print('CATEGORY' + category)
     cat_split = category.split('_')
-    cat_name = cat_split[0].capitalize()+'s'
-    print('CATEGORY_NAME' +cat_name)
+    cat_name = cat_split[0].capitalize() + 's'
+    print('CATEGORY_NAME' + cat_name)
 
     print(category)
     if category == 'monitor_graph':
-        f = MonitorFilter(request.GET,MonitorSpecs.objects.all())
+        f = MonitorFilter(request.GET, MonitorSpecs.objects.all())
         t = MonitorTable(f.qs)
     elif category == 'cpu_graph':
-        f = CPUFilter(request.GET,CPUSpecs.objects.all())
+        f = CPUFilter(request.GET, CPUSpecs.objects.all())
         t = CPUTable(f.qs)
     elif category == 'gpu_graph':
-        f = GPUFilter(request.GET,GPUSpecs.objects.all())
+        f = GPUFilter(request.GET, GPUSpecs.objects.all())
         t = GPUTable(f.qs)
     elif category == 'motherboard_graph':
-        f = MBFilter(request.GET,MBSpecs.objects.all())
+        f = MBFilter(request.GET, MBSpecs.objects.all())
         t = MBTable(f.qs)
     elif category == 'psu_graph':
-        f = PSUFilter(request.GET,PSUSpecs.objects.all())
+        f = PSUFilter(request.GET, PSUSpecs.objects.all())
         t = PSUTable(f.qs)
     elif category == 'ram_graph':
-        f = RAMFilter(request.GET,RAMSpecs.objects.all())
+        f = RAMFilter(request.GET, RAMSpecs.objects.all())
         t = RAMTable(f.qs)
     else:
-        f = StorFilter(request.GET,StorSpecs.objects.all())
+        f = StorFilter(request.GET, StorSpecs.objects.all())
         t = StorTable(f.qs)
 
     RequestConfig(request).configure(t)
@@ -241,6 +242,6 @@ def list_all(request,**kwargs):
     return render(request, 'list_all.html', {
         'title': cat_name,
         'table': t,
-        'filter': f
-})
-
+        'filter': f,
+        'back_url': back_url
+    })
