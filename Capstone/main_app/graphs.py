@@ -47,7 +47,7 @@ class BaseGraph:
         return label_list_html
 
     def get_html_graph(self, x, y, title, x_label, y_label):
-        fig = Figure(figsize=[15, 10])
+        fig = Figure(figsize=[20, 10])
         ax = fig.subplots()
         ax.grid(True, alpha=0.3)
         points = ax.plot(self.df[x], self.df[y], 'bo',

@@ -208,12 +208,8 @@ def logout(request):
 def list_all(request, **kwargs):
     category = kwargs['category']
     back_url = '/'+category
-    print('CATEGORY' + category)
     cat_split = category.split('_')
     cat_name = cat_split[0].capitalize() + 's'
-    print('CATEGORY_NAME' + cat_name)
-
-    print(category)
     if category == 'monitor_graph':
         f = MonitorFilter(request.GET, MonitorSpecs.objects.all())
         t = MonitorTable(f.qs)
